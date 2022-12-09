@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #282828;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+.header {
+  height: 8rem;
+  width: 100%;
+  background-color: transparent;
+}
+
+.header img {
+  height: 3.5rem;
+  margin: 20px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+.content {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 22rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  transform: translateY(7%);
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#VRcircle {
+  background-color: #0381c1;
+  opacity: 0.6;
+  border: #fff solid 1px;
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text,
+#VR,
+span,
+p {
+  background-color: transparent;
+}
+
+.text {
+  height: 100%;
+}
+
+#VR {
+  font-size: 3.7rem;
+}
+
+.circle {
+  position: absolute;
+  background-color: #0381c1;
+  opacity: 0.6;
+  border: #fff solid 1px;
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.circle:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.smallCircles {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.circleId {
+  background-color: #0381c1;
+}
+
+.circleId {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.circle1 {
+  transform: translateY(22px) translateX(-131px);
+}
+.circle2 {
+  transform: translateY(131px) translateX(-16px);
+}
+
+.circle4 {
+  transform: translateY(127px) translateX(-246px);
+}
+
+.circle3 {
+  transform: translateY(248px) translateX(-131px);
+}
+
+footer {
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  padding: 10px 0;
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.icons {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin-left: 10px;
+}
+.icons a {
+  margin: 0 7px;
+}
+
+.icons img {
+  height: 1.8rem;
+}
+
+.icons img:hover {
+  background-color: #0381c1;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.copyright {
+  text-align: center;
+  color: #0381c1;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+@media screen and (orientation: landscape) {
+  .header img {
+    margin: 10px;
+    height: 3.3rem;
+  }
+  .content {
+    margin: -10em 0;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+
+@media screen and (min-width: 880px) {
+	.header img {
+		height: 5rem;
+	}
+	.content {
+		height: 37rem;
+		margin: -4em 0;
+	}
+	#VRcircle{
+		height: 320px;
+		width: 320px;
+	}
+	.circle {
+		height: 145px;
+		width: 145px;
+	}
+	a{
+		font-size: 1.8rem;
+	}
+	#VR {
+		font-size: 7rem;
+	}
+	.circle1{
+		transform: translateY(7px) translateX(-237px);
+	}
+	.circle4 {
+		transform: translateY(225px) translateX(-448px);
+	}
+	.circle2 {
+		transform: translateY(225px) translateX(-19px);
+	}
+	.circle3 {
+		transform: translateY(438px) translateX(-237px);
+	}
+}
