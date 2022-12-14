@@ -88,7 +88,7 @@ p {
 
 .circle:hover {
   cursor: pointer;
-  background-color: grey;
+  background-color: grey !important;
 }
 
 .smallCircles {
